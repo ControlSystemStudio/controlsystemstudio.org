@@ -173,14 +173,6 @@ const Header = ({ siteTitle }) => {
               >
                 <FontAwesomeIcon icon={faGithub} size="2x" />
               </a>
-              <a
-                href="https://plus.google.com/u/0/b/101349549663920375487/101349549663920375487/posts"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Link to Google Plus community"
-              >
-                <FontAwesomeIcon icon={faGooglePlus} size="2x" />
-              </a>
             </SocialMediaLinks>
           </Menu>
         </Flex>
