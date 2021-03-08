@@ -25,12 +25,15 @@ const About = () => {
       <SEO title="Contribute" />
       <Banner imageFluid={images.banner.childImageSharp.fluid} text="Contribute" />
       <Container>
-        <h1>How to Contribute to CS-Studio</h1>
+        <h1>How to Contribute</h1>
+
+        <li>
+          CS-Studio & Phoebus development is hosted on Github. You will need a Github
+          account.
+        </li>
+          
+        <h2>CS-Studio</h2>
         <ul>
-          <li>
-            CS-Studio development is hosted on Github. You will need a Github
-            account.
-          </li>
           <li>
             The most complete documentation for developers, including how to
             import into Eclipse and build CS-Studio, is the{" "}
@@ -44,11 +47,27 @@ const About = () => {
             .
           </li>
         </ul>
+
+        <h2>Phoebus</h2>
+        <ul>
+          <li>
+            The most complete documentation for developers, including how to
+            build and set up various IDE's for development of Phoebus, is the{" "}
+            <a
+              href="https://control-system-studio.readthedocs.io/en/latest/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              docbook
+            </a>
+            .
+          </li>
+        </ul>
         <h2>Fork us on Github</h2>
         <p>
           All contributions are accepted as Pull Requests on{" "}
           <a
-            href="https://github.com/ControlSystemStudio/cs-studio"
+            href="https://github.com/ControlSystemStudio"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -59,15 +78,7 @@ const About = () => {
         <h2>Attend Meetings</h2>
         <ul>
           <li>
-            We use Google Hangouts to share our progress and discuss issues,
-            follow us on{" "}
-            <a
-              href="https://plus.google.com/101349549663920375487/posts"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Google Plus
-            </a>
+            We use Google Hangouts to share our progress and discuss issues.
           </li>
           <li>Meetings are posted (viewable after being added to group)</li>
           <li>
