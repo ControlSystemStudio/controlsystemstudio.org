@@ -61,6 +61,16 @@ const About = () => {
             Manual for building and using CS-Studio
             </p>
           </Showcase>
+          <Showcase
+            href="https://control-system-studio.readthedocs.io/en/latest/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FontAwesomeIcon icon={faGraduationCap} size="2x" />
+            <h3>Guidebook</h3>
+            <p>
+            Manual for building and using Phoebus
+            </p>
           </Showcase>
           <Showcase
             href="https://drive.google.com/folderview?id=0B_ikNAN_jxjPWmF6b3plYV8zbWM&usp=sharing_eid&tid=0Bxrrhhn0aTLWNS0teDEtNzRkVnc"
