@@ -7,6 +7,11 @@ import Container from "../components/container"
 import Collaboration from "../components/collaboration"
 import Banner from "../components/banner"
 
+const Highlight = styled.span`
+  color: #00293f;
+  font-weight: bold;
+`
+
 const About = () => {
   const images = useStaticQuery(graphql`
     query {
