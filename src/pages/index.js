@@ -144,7 +144,7 @@ const IndexPage = () => {
                 With an extensible data connection layer it is possible to use CS-Studio & Phoebus
                 with multiple control systems and data sources. Currently, the community supports
                 the EPICS channel access and pvAccess protocols along with MQTT.
-                <br> The use of well defined SPI's allows for CS-Studio applications can be used with a multiple site specific 
+                The use of well defined SPI's allows for CS-Studio applications can be used with a multiple site specific 
                 services.
               </p>
               <ContentImage>
@@ -179,7 +179,6 @@ const IndexPage = () => {
               <p>
                 A WYSIWYG editor make is possible to develop production quality controls and
                 monitoring user interfaces easily.
-              <br>
                 The CS-Studio & Phoebus frameworks provide support for developing multi threading applications 
                 along with providing features like rate limiting and aggregation ensuring performance and scalablity of 
                 user developed screens.
