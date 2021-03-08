@@ -117,8 +117,7 @@ const IndexPage = () => {
           <Highlight>Control System Studio</Highlight> is a collection of tools and applications to monitor and operate 
           large scale control systems, such as the ones in the accelerator community.
           </p>
-          <p>
-          The original implementation of <Highlight>CS-Studio</Highlight> is based on the eclipse RCP framework which provided
+          <p> The original implementation of <Highlight>CS-Studio</Highlight> is based on the eclipse RCP framework which provided
           a extensible and puggable architecture. <Highlight>Phoebus</Highlight> is a pure java/javafx based implementation 
           which uses java feature like SPI and modules to provide the same extensible and modular achitecture.
           </p>
@@ -142,15 +141,13 @@ const IndexPage = () => {
             </h2>
             <ContentFlexLeft>
               <p>
-                With PVManager at the center visualize any datasource service or
-                event driven. Lorem ipsum dolor sit amet, consectetur adipiscing
-                elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-                aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-                aute irure dolor in reprehenderit in voluptate velit esse cillum
-                dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                cupidatat non proident, sunt in culpa qui officia deserunt
-                mollit anim id est laborum.
+                With an extensible data connection layer it is possible to use CS-Studio & Phoebus
+                with multiple control systems and data sources. Currently, the community supports
+                the EPICS channel access and pvAccess protocols along with MQTT.
+              </p>
+              <p>
+                The use of well defined SPI's allows for CS-Studio applications can be used with a multiple site specific 
+                services.
               </p>
               <ContentImage>
                 <Img
@@ -171,7 +168,7 @@ const IndexPage = () => {
                   WebkitBoxDecorationBreak: `clone`,
                 }}
               >
-                PRODUCTION QUALITY USER INTERFACES
+                QUALITY USER INTERFACES
               </span>
             </h2>
             <ContentFlexRight>
@@ -182,14 +179,13 @@ const IndexPage = () => {
                 />
               </ContentImage>
               <p>
-                With a focus on control room screens and viewing on the fly
-                correlations. Sed ut perspiciatis unde omnis iste natus error
-                sit voluptatem accusantium doloremque laudantium, totam rem
-                aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
-                architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam
-                voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed
-                quia consequuntur magni dolores eos qui ratione voluptatem sequi
-                nesciunt.
+                A WYSIWYG editor make is possible to develop production quality controls and
+                monitoring user interfaces easily.
+              </p>
+              <p>
+                The CS-Studio & Phoebus frameworks provide support for developing multi threading applications 
+                along with providing features like rate limiting and aggregation ensuring performance and scalablity of 
+                user developed screens.
               </p>
             </ContentFlexRight>
           </Container>
