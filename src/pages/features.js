@@ -125,6 +125,38 @@ const About = () => {
           fluid={images.opi.childImageSharp.fluid}
           style={{ maxWidth: `80%`, margin: `3rem 0 4rem` }}
         />
+
+        <div style={{ marginBottom: `3rem` }}></div>
+        <h2>DataBrowser</h2>
+        <p>
+          The Data Browser is a CSS tool for displaying live as well as
+          ArchiveSupport historic LiveDataSupport control system data in a
+          Strip-Chart type plot.
+        </p>
+        <Img
+          fluid={images.databrowser.childImageSharp.fluid}
+          style={{ maxWidth: 437 }}
+        />
+        <p>
+          The current plot can be emailed or sent to a log book or as email.
+        </p>
+
+        {/** Logbook **/}
+        <div style={{ marginBottom: `3rem` }}></div>
+        <h2>Logbook Support</h2>
+        <p>
+          The Data Browser, Display Builder, and other tools can be integrated with 
+          the logbook clients to make rich log entries. Each application can configure the
+          data that is automatically included in the log entry.
+        </p>
+
+        <p>
+          The are pluggable framework for CS-Studio and Phoebus allows applications to 
+          create log entires to different implementations of logbook services. Currently, 
+          the is support for Olog, Olog-ES, ELOG, and SNS operations logbook.
+        </p>
+
+        {/** Alarm Services **/}
         <div style={{ marginBottom: `3rem` }}></div>
         <h2>BEAST - The Best Ever Alarm System Toolkit</h2>
         <p>
@@ -207,30 +239,6 @@ const About = () => {
           <a href="https://github.com/ControlSystemStudio/cs-studio/wiki/BOY">
             Read more
           </a>
-        </p>
-        <div style={{ marginBottom: `3rem` }}></div>
-        <h2>DataBrowser</h2>
-        <p>
-          The Data Browser is a CSS tool for displaying live as well as
-          ArchiveSupport historic LiveDataSupport control system data in a
-          Strip-Chart type plot.
-        </p>
-        <Img
-          fluid={images.databrowser.childImageSharp.fluid}
-          style={{ maxWidth: 437 }}
-        />
-        <p>
-          The current plot can be emailed or sent to a log book or as email.
-        </p>
-        <div style={{ marginBottom: `3rem` }}></div>
-        <h2>Logbook Support</h2>
-        <p>
-          The Data Browser, PACE and maybe other tools use org.csstudio.logbook
-          for making electronic entries.
-        </p>
-        <p>
-          There are pluggable implementations for the SNS "ELog" and maybe
-          others.
         </p>
         <div style={{ marginBottom: `3rem` }}></div>
         <h2>Scan Client</h2>

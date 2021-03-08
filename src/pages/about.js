@@ -30,6 +30,11 @@ const About = () => {
           Control System Studio is a collection of tools and applications to monitor and operate 
           large scale control systems, such as the ones in the accelerator community.
         </p>
+
+        <div style={{ marginTop: `3rem`, marginBottom: `3rem` }}>
+          <h2>Meet Our Team</h2>
+
+        </div>
         <div style={{ marginTop: `3rem`, marginBottom: `3rem` }}>
           <h2>Contact</h2>
           <p>
