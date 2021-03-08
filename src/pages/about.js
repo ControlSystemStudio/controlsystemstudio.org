@@ -7,11 +7,6 @@ import Container from "../components/container"
 import Collaboration from "../components/collaboration"
 import Banner from "../components/banner"
 
-const Highlight = styled.span`
-  color: #00293f;
-  font-weight: bold;
-`
-
 const About = () => {
   const images = useStaticQuery(graphql`
     query {
@@ -32,7 +27,7 @@ const About = () => {
       <Banner imageFluid={images.banner.childImageSharp.fluid} text="About" />
       <Container>
         <p style={{ marginBottom: `0` }}>
-          <Highlight>Control System Studio</Highlight> is a collection of tools and applications to monitor and operate 
+          Control System Studio is a collection of tools and applications to monitor and operate 
           large scale control systems, such as the ones in the accelerator community.
         </p>
         <div style={{ marginTop: `3rem`, marginBottom: `3rem` }}>
