@@ -114,12 +114,18 @@ const IndexPage = () => {
         <Container style={{ marginTop: `2rem`, marginBottom: `2rem` }}>
           <h1>Control System Studio</h1>
           <p style={{ marginBottom: `0` }}>
-            <Highlight>Control System Studio</Highlight> or <Highlight>CS-Studio</Highlight> is an Eclipse-based
-            collection of tools to monitor and operate large scale control
-            systems, such as the ones in the accelerator community. It's a
-            product of the collaboration between different laboratories and
-            universities.
+          <Highlight>Control System Studio</Highlight> is a collection of tools and applications to monitor and operate 
+          large scale control systems, such as the ones in the accelerator community.
           </p>
+          <p>
+          The original implementation of <Highlight>CS-Studio</Highlight> is based on the eclipse RCP framework which provided
+          a extensible and puggable architecture. <Highlight>Phoebus</Highlight> is a pure java/javafx based implementation 
+          which uses java feature like SPI and modules to provide the same extensible and modular achitecture.
+          </p>
+          <p> The <Highlight>CS-Studio</Highlight> and <Highlight>Phoebus</Highlight>
+          products are developed and maintained but a collaboration between many laboratories and
+          universities.
+        </p>
         </Container>
         <GreyBackground style={{ padding: `2rem 0` }}>
           <Container>
