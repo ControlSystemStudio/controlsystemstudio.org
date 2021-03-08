@@ -61,16 +61,6 @@ const About = () => {
             Manual for building and using CS-Studio
             </p>
           </Showcase>
-          <Showcase
-            href="https://drive.google.com/drive/folders/0B_ikNAN_jxjPR05WbFFuRmliMnc?tid=0Bxrrhhn0aTLWNS0teDEtNzRkVnc"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <FontAwesomeIcon icon={faBell} size="2x" />
-            <h3>Management Review Meetings</h3>
-            <p>
-              Reports from the yearly meetings for collaboration, policy and objectives
-            </p>
           </Showcase>
           <Showcase
             href="https://drive.google.com/folderview?id=0B_ikNAN_jxjPWmF6b3plYV8zbWM&usp=sharing_eid&tid=0Bxrrhhn0aTLWNS0teDEtNzRkVnc"
