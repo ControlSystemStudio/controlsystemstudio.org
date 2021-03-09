@@ -122,7 +122,7 @@ const IndexPage = () => {
           a extensible and puggable architecture. <Highlight>Phoebus</Highlight> is a pure java/javafx based implementation 
           which uses java feature like SPI and modules to provide the same extensible and modular achitecture.
           </p>
-          <p> The <Highlight>CS-Studio</Highlight> and <Highlight>Phoebus</Highlight>
+          <p> The <Highlight>CS-Studio</Highlight> and <Highlight>Phoebus</Highlight> 
           products are developed and maintained but a collaboration between many laboratories and
           universities.
         </p>
