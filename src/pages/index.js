@@ -202,12 +202,12 @@ const IndexPage = () => {
             </h2>
             <ContentFlexLeft>
               <p>
-                View archived data and live data together. Neque porro quisquam
-                est, qui dolorem ipsum quia dolor sit amet, consectetur,
-                adipisci velit, sed quia non numquam eius modi tempora incidunt
-                ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim
-                ad minima veniam, quis nostrum exercitationem ullam corporis
-                suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?
+              The Databrowser is a trending tool. It aggregates live and
+              archived data to plot values over a user-defined time range.
+              Databrowser plots may be created from any OPI visual component
+              associated with a control system process value (PV). Additional
+              features include extensive plot styling capabilities as well as 
+              import/export of data in several formats. 
               </p>
               <ContentImage>
                 <Img
