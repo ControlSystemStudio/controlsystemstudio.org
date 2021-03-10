@@ -1,0 +1,70 @@
+.social-icons {
+	margin:0;
+}
+.social-icons li {
+	float:left;
+	display:inline;
+	list-style:none;
+	margin-right:5px;
+	margin-bottom:5px;
+	text-indent:-9999px;
+}
+.social-icons li a, a.social-icon {
+	width:28px;
+	height:28px;
+	display:block;
+	background-position:0 0;
+	background-repeat:no-repeat;
+	transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-webkit-transition: all 0.3s ease-in-out;
+}
+.social-icons li:hover a {
+	background-position:0 -38px;
+}
+
+.social_github {background: url(../images/github.png) no-repeat;}
+
+.team ul { 
+	text-align:right;
+}
+.team ul li {
+	padding:0 !important;
+	margin:0 !important;
+}
+.team ul li a,
+.team ul li a:hover {
+	text-decoration:none;
+}
+.team ul li i {
+	color:#aaa;
+	font-size:20px;
+	padding:4px;
+	background:#f7f7f7;
+}
+.team ul li i.icon-facebook {
+	padding:4px 10px;
+}
+.team ul li i:hover {
+	color:#fff;
+	background:#72c02c;
+	-webkit-transition:all 0.2s ease-in-out;
+	-moz-transition:all 0.2s ease-in-out;
+	-o-transition:all 0.2s ease-in-out;
+	transition:all 0.2s ease-in-out;
+}
+.team .thumbnail-style {
+	padding:12px;
+}
+.team .thumbnail-style small {
+	display:block; 
+	font-size:12px;
+}
+.team .thumbnail-style h3 {
+	margin-bottom:10px;
+}
+.team .thumbnail-style:hover h3 a {
+	color:#72c02c !important;
+}
