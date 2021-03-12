@@ -117,14 +117,13 @@ const IndexPage = () => {
           <Highlight>Control System Studio</Highlight> is a collection of tools and applications to monitor and operate 
           large scale control systems, such as the ones in the accelerator community.
           </p>
-          
+          <p></p>
           <p> The original implementation of <Highlight>CS-Studio</Highlight> is based on the eclipse RCP framework which provided
           a extensible and puggable architecture. <Highlight>Phoebus</Highlight> is a pure java/javafx based implementation 
           which uses java feature like SPI and modules to provide the same extensible and modular achitecture.
           </p>
-          <p> The <Highlight>CS-Studio</Highlight> and <Highlight>Phoebus</Highlight> 
-          products are developed and maintained but a collaboration between many laboratories and
-          universities.
+          <p> The <Highlight>CS-Studio</Highlight> and <Highlight>Phoebus</Highlight> products are developed and 
+          maintained by a collaboration between many laboratories and universities.
         </p>
         </Container>
         <GreyBackground style={{ padding: `2rem 0` }}>
