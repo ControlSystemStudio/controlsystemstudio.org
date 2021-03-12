@@ -166,7 +166,7 @@ const Header = ({ siteTitle }) => {
             </Link>
             <SocialMediaLinks>
               <a
-                href="https://github.com/ControlSystemStudio/cs-studio"
+                href="https://github.com/ControlSystemStudio"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Link to Github repository"
