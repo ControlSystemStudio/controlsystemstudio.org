@@ -41,7 +41,7 @@ const SiteSpecificVersions = () => {
       <Site>
         <h3>ESS</h3>
         <StyledDownloadButton
-          href="https://confluence.esss.lu.se/display/CR/ESS+CS-Studio+Releases"
+          href="https://artifactory.esss.lu.se/artifactory/libs-release-local/se/europeanspallationsource/ics/ess-cs-studio-phoebus/"
           target="_blank"
           rel="noopener noreferrer"
         >
