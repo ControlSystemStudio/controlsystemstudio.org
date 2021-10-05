@@ -119,7 +119,7 @@ const IndexPage = () => {
           </p>
           <p></p>
           <p> The original implementation of <Highlight>CS-Studio</Highlight> is based on the eclipse RCP framework which provided
-          a extensible and puggable architecture. <Highlight>Phoebus</Highlight> is a pure java/javafx based implementation 
+          a extensible and pluggable architecture. <Highlight>Phoebus</Highlight> is a pure java/javafx based implementation 
           which uses java feature like SPI and modules to provide the same extensible and modular achitecture.
           </p>
           <p> The <Highlight>CS-Studio</Highlight> and <Highlight>Phoebus</Highlight> products are developed and 
