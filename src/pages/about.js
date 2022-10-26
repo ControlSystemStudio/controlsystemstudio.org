@@ -198,6 +198,16 @@ const About = () => {
                 </li>
               </ul>
             </Member>
+            <Member>
+              <h4>Tanvi Ashwarya</h4>
+              <Role>Site Representative</Role>
+              <Site>FRIB</Site>
+              <ul className="social-icons social-icons-color">
+                <li>
+                  <a href="https://github.com/tanviash" className="social_github"></a>
+                </li>
+              </ul>
+            </Member>
           </Grid>
 
         </div>
