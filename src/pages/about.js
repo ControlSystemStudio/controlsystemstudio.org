@@ -104,7 +104,7 @@ const About = () => {
               </ul>
             </Member>
             <Member>
-              <h4>Dominic Oram</h4>
+              <h4>Ivan Finch</h4>
               <Role>Site Representative</Role>
               <Site>ISIS</Site>
               <ul className="social-icons social-icons-color">
@@ -154,7 +154,7 @@ const About = () => {
               </ul>
             </Member>
             <Member>
-              <h4>Will Rogers</h4>
+              <h4>Andy Wilson</h4>
               <Role>Site Representative</Role>
               <Site>Diamond</Site>
               <ul className="social-icons social-icons-color">
