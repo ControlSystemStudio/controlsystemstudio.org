@@ -79,7 +79,7 @@ const About = () => {
             for static graphics, an <code>LED</code> that changes between on/off
             states based on a PV, and a <code>Multi State LED</code> that
             changes between more than two PV states. Widgets with specific
-            purpose are more obvious not only to the end user but also to tools
+            purposes are more obvious not only to the end user but also to tools
             which translate between display file formats.
           </li>
           <li>
@@ -130,8 +130,7 @@ const About = () => {
         <h2>DataBrowser</h2>
         <p>
           The Data Browser is a CSS tool for displaying live as well as
-          ArchiveSupport historic LiveDataSupport control system data in a
-          Strip-Chart type plot.
+          Archived control system data in a Strip-Chart type plot.
         </p>
         <Img
           fluid={images.databrowser.childImageSharp.fluid}
@@ -151,9 +150,9 @@ const About = () => {
         </p>
 
         <p>
-          The are pluggable framework for CS-Studio and Phoebus allows applications to 
+          The pluggable framework for CS-Studio and Phoebus allows applications to 
           create log entires to different implementations of logbook services. Currently, 
-          the is support for Olog, Olog-ES, ELOG, and SNS operations logbook.
+          there is support for Olog, Olog-ES, ELOG, and SNS operations logbook.
         </p>
 
         {/** Alarm Services **/}
@@ -185,7 +184,7 @@ const About = () => {
             Invoke links to related operator interfaces or other CSS tools for
             the alarm trigger PVs
           </li>
-          <li>Acknowledge alarms Edit the configuration</li>
+          <li>Acknowledge alarms and edit the configuration</li>
         </ul>
         <Img
           fluid={images.beast.childImageSharp.fluid}
@@ -220,12 +219,12 @@ const About = () => {
           creating PPT. The OPI Runtime works in a similar way as modern web
           browsers. One can display the OPIs either in tabs, windows or views
           and navigate OPIs forward or backward. An OPI is a regular XML file
-          that can be edited in OPI editor or text editor and run in OPI
+          that can be edited in OPI editor or a text editor and run in OPI
           Runtime. No compilation is needed.
         </p>
         <p>
           The data communication layer is a separate layer which allows BOY
-          connecting to various data sources seamlessly. Users can provide their
+          to connect to various data sources seamlessly. Users can provide their
           own data source by extending an Eclipse extension point. Currently, it
           supports EPICS, local, simulated and system data sources. Potentially,
           it could support OPC, DDS, Tango or your own data source.
