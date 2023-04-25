@@ -134,6 +134,16 @@ const About = () => {
               </ul>
             </Member>
             <Member>
+              <h4>Lorenzo Gomez</h4>
+              <Role>Site Representative</Role>
+              <Site>Windhover Labs</Site>
+              <ul className="social-icons social-icons-color">
+                <li>
+                  <a href="https://github.com/lorenzo-gomez-windhover" className="social_github"></a>
+                </li>
+              </ul>
+            </Member>
+            <Member>
               <h4>Gustavo Ciotto Pinton</h4>
               <Role>Site Representative</Role>
               <Site>Laboratório Nacional de Luz Síncrotron (LNLS)</Site>
