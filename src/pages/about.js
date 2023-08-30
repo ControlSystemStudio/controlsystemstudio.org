@@ -218,6 +218,16 @@ const About = () => {
                 </li>
               </ul>
             </Member>
+            <Member>
+              <h4>Dariusz Jarosz</h4>
+              <Role>Site Representative</Role>
+              <Site>Advanced Photon Source (ANL)</Site>
+              <ul className="social-icons social-icons-color">
+                <li>
+                  <a href="https://github.com/iTerminate" className="social_github"></a>
+                </li>
+              </ul>
+            </Member>
           </Grid>
 
         </div>
