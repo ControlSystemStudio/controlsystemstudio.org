@@ -28,13 +28,11 @@ Images are places inside `src/images` and queried using GraphQL.
         relativePath: { eq: "CS-Studio-OPIs_and_Keyvisual_v03_big.png" }
       ) {
         childImageSharp {
-          fluid(maxWidth: 3840, maxHeight: 2160) {
-            ...GatsbyImageSharpFluid_withWebp
-          }
+          gatsbyImageData(width: 3840, height: 2160, layout: CONSTRAINED)
         }
       }
 
-This query is included inside of the useStaticQuery hook inside of the main component of the page.
+The layout property can be set to CONSTRAINED (for images of a set size) or FULLWIDTH (for properties that span the full width of the screen. This query is included inside of the useStaticQuery hook inside of the main component of the page.
 The image can then be displayed using
 
     <GatsbyImage
