@@ -1,6 +1,6 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
-import Img from "gatsby-image"
+import { GatsbyImage } from "gatsby-plugin-image"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -8,48 +8,36 @@ import Container from "../components/container"
 import Banner from "../components/banner"
 
 const About = () => {
-  const images = useStaticQuery(graphql`
-    query {
-      banner: file(
-        relativePath: { eq: "banners/CS-Studio-Keyvisual_banner_4_darker.png" }
-      ) {
-        childImageSharp {
-          fluid(maxWidth: 3300, maxHeight: 400, quality: 100) {
-            ...GatsbyImageSharpFluid_withWebp
-          }
-        }
-      }
-      opi: file(
-        relativePath: { eq: "CS-Studio-OPIs_and_Keyvisual_v03_big.png" }
-      ) {
-        childImageSharp {
-          fluid(maxWidth: 3840, maxHeight: 2160) {
-            ...GatsbyImageSharpFluid_withWebp
-          }
-        }
-      }
-      beast: file(relativePath: { eq: "beast.png" }) {
-        childImageSharp {
-          fluid(maxWidth: 487) {
-            ...GatsbyImageSharpFluid_withWebp
-          }
-        }
-      }
-      databrowser: file(relativePath: { eq: "databrowserabout.png" }) {
-        childImageSharp {
-          fluid(maxWidth: 487) {
-            ...GatsbyImageSharpFluid_withWebp
-          }
-        }
-      }
+  const images = useStaticQuery(graphql`{
+  banner: file(
+    relativePath: {eq: "banners/CS-Studio-Keyvisual_banner_4_darker.png"}
+  ) {
+    childImageSharp {
+      gatsbyImageData(quality: 100, layout: FULL_WIDTH)
     }
-  `)
+  }
+  opi: file(relativePath: {eq: "CS-Studio-OPIs_and_Keyvisual_v03_big.png"}) {
+    childImageSharp {
+      gatsbyImageData(layout: FULL_WIDTH)
+    }
+  }
+  beast: file(relativePath: {eq: "beast.png"}) {
+    childImageSharp {
+      gatsbyImageData(width: 487, layout: CONSTRAINED)
+    }
+  }
+  databrowser: file(relativePath: {eq: "databrowserabout.png"}) {
+    childImageSharp {
+      gatsbyImageData(width: 487, layout: CONSTRAINED)
+    }
+  }
+}`)
 
   return (
     <Layout>
       <SEO title="Features" />
       <Banner
-        imageFluid={images.banner.childImageSharp.fluid}
+        imageFluid={images.banner.childImageSharp.gatsbyImageData}
         text="Features"
       />
       <Container style={{ marginTop: `2rem` }}>
@@ -121,8 +109,8 @@ const About = () => {
           CS-Studio and the current Phoebus-based development. In addition, a
           purely web based runtime is available for remotely viewing displays.
         </p>
-        <Img
-          fluid={images.opi.childImageSharp.fluid}
+        <GatsbyImage
+          image={images.opi.childImageSharp.gatsbyImageData}
           style={{ maxWidth: `80%`, margin: `3rem 0 4rem` }}
         />
 
@@ -132,8 +120,8 @@ const About = () => {
           The Data Browser is a CSS tool for displaying live as well as
           Archived control system data in a Strip-Chart type plot.
         </p>
-        <Img
-          fluid={images.databrowser.childImageSharp.fluid}
+        <GatsbyImage
+          image={images.databrowser.childImageSharp.gatsbyImageData}
           style={{ maxWidth: 437 }}
         />
         <p>
@@ -186,8 +174,8 @@ const About = () => {
           </li>
           <li>Acknowledge alarms and edit the configuration</li>
         </ul>
-        <Img
-          fluid={images.beast.childImageSharp.fluid}
+        <GatsbyImage
+          image={images.beast.childImageSharp.gatsbyImageData}
           style={{ maxWidth: 437 }}
         />
         <p>
@@ -258,7 +246,7 @@ const About = () => {
         </p>
       </Container>
     </Layout>
-  )
+  );
 }
 
 export default About

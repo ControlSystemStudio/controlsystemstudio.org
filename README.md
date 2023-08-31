@@ -7,8 +7,10 @@ Redesign of the website for Control System Studio (CS-Studio). Made using Gatsby
 https://peaceful-jackson-f187cb.netlify.app/
 
 ## Developing/Testing locally
-Gatsby has a fantastic development server feature, which allows you to preview the page immediately without building it. Make sure to install all npm dependencies using `npm install` the first time you run the site.
+Gatsby has a fantastic development server feature, which allows you to preview the page immediately without building it. This project uses Gatsby version 5 which REQUIRES Node 18. The project will not build with a lower version of Node and npm. 
+You may get a warning about peer dependency resolution with npm packages. This is because Gatsby 5 has a peer dependency on an unreleased version of React. Make sure to install all npm dependencies using `npm install` the first time you run the site. The project should build and run without issue, however. If you encounter an issue installing packages, run `npm install --legacy-peer-deps`.
     
+    $ npm install
     $ npm start
   
 ## Building
@@ -16,6 +18,7 @@ To run the site on a server, it needs to be built first.
 
     $ npm install
     $ npm run build
+    $ npm run serve
   
 The website files can be found in `public`.
 
@@ -28,18 +31,16 @@ Images are places inside `src/images` and queried using GraphQL.
         relativePath: { eq: "CS-Studio-OPIs_and_Keyvisual_v03_big.png" }
       ) {
         childImageSharp {
-          fluid(maxWidth: 3840, maxHeight: 2160) {
-            ...GatsbyImageSharpFluid_withWebp
-          }
+          gatsbyImageData(width: 3840, height: 2160, layout: CONSTRAINED)
         }
       }
 
-This query is included inside of the useStaticQuery hook inside of the main component of the page.
+The layout property can be set to CONSTRAINED (for images of a set size) or FULLWIDTH (for properties that span the full width of the screen. This query is included inside of the useStaticQuery hook inside of the main component of the page.
 The image can then be displayed using
 
-    <Img
-          fluid={images.opi.childImageSharp.fluid}
-          style={{ maxWidth: `80%`, margin: `3rem 0 4rem` }}
+    <GatsbyImage
+          image={images.opi.childImageSharp.fluid}
+          style={{ width: `80%`, margin: `3rem 0 4rem` }}
     />
 
 For more detail please refer to the [Gatsby documentation](https://www.gatsbyjs.org/docs/working-with-images/).
