@@ -4,7 +4,7 @@
 
 Redesign of the website for Control System Studio (CS-Studio). Made using GatsbyJS and hosted on netlify. 
 
-https://peaceful-jackson-f187cb.netlify.app/
+https://inquisitive-malabi-c369c9.netlify.app/
 
 ## Developing/Testing locally
 Gatsby has a fantastic development server feature, which allows you to preview the page immediately without building it. This project uses Gatsby version 5 which REQUIRES Node 18. The project will not build with a lower version of Node and npm. 
