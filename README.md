@@ -1,6 +1,6 @@
 <img src="/src/images/CSS_logo_2019_darkblue_no border_v08.svg" width="200px">
 
-# controlsystemstudio.org [![Netlify Status](https://api.netlify.com/api/v1/badges/92876b0c-4565-41e5-ae0f-7c9a24b363d7/deploy-status)](https://app.netlify.com/sites/inquisitive-malabi-c369c9/deploys)
+# controlsystemstudio.org [![Netlify Status](https://api.netlify.com/api/v1/badges/f16d63f2-f368-4443-80f9-b7086cc7bc3f/deploy-status)](https://app.netlify.com/sites/inquisitive-malabi-c369c9/deploys)
 
 Redesign of the website for Control System Studio (CS-Studio). Made using GatsbyJS and hosted on netlify. 
 
