@@ -1,6 +1,6 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
-import Img from "gatsby-image"
+import { GatsbyImage } from "gatsby-plugin-image"
 import styled from 'styled-components'
 
 const Flex = styled.div`
@@ -11,54 +11,40 @@ const Flex = styled.div`
 `
 
 const Collaboration = ({ style }) => {
-  const images = useStaticQuery(graphql`
-    query {
-      ess: file(relativePath: { eq: "institutes/ESS_logo.png" }) {
-        childImageSharp {
-          fluid(maxWidth: 99, maxHeight: 99, quality: 80) {
-            ...GatsbyImageSharpFluid_withWebp
-          }
-        }
-      }
-      brok: file(relativePath: { eq: "institutes/Brok_Logo_v01.png" }) {
-        childImageSharp {
-          fluid(maxWidth: 99, maxHeight: 99, quality: 80) {
-            ...GatsbyImageSharpFluid_withWebp
-          }
-        }
-      }
-      desy: file(relativePath: { eq: "institutes/desy_Logo_v01.png" }) {
-        childImageSharp {
-          fluid(maxWidth: 99, maxHeight: 99, quality: 80) {
-            ...GatsbyImageSharpFluid_withWebp
-          }
-        }
-      }
-      frib: file(relativePath: { eq: "institutes/FRIB_logo_v01.png" }) {
-        childImageSharp {
-          fluid(maxWidth: 99, maxHeight: 99, quality: 80) {
-            ...GatsbyImageSharpFluid_withWebp
-          }
-        }
-      }
-      iter: file(relativePath: { eq: "institutes/iter_v01.png" }) {
-        childImageSharp {
-          fluid(maxWidth: 99, maxHeight: 99, quality: 80) {
-            ...GatsbyImageSharpFluid_withWebp
-          }
-        }
-      }
-      sns: file(
-        relativePath: { eq: "institutes/Spallation_Neutron_Source_logo_v01.png" }
-      ) {
-        childImageSharp {
-          fluid(maxWidth: 99, maxHeight: 99, quality: 80) {
-            ...GatsbyImageSharpFluid_withWebp
-          }
-        }
-      }
+  const images = useStaticQuery(graphql`{
+  ess: file(relativePath: {eq: "institutes/ESS_logo.png"}) {
+    childImageSharp {
+      gatsbyImageData(width: 99, height: 99, quality: 80, layout: CONSTRAINED)
     }
-  `)
+  }
+  brok: file(relativePath: {eq: "institutes/Brok_Logo_v01.png"}) {
+    childImageSharp {
+      gatsbyImageData(width: 99, height: 99, quality: 80, layout: CONSTRAINED)
+    }
+  }
+  desy: file(relativePath: {eq: "institutes/desy_Logo_v01.png"}) {
+    childImageSharp {
+      gatsbyImageData(width: 99, height: 99, quality: 80, layout: CONSTRAINED)
+    }
+  }
+  frib: file(relativePath: {eq: "institutes/FRIB_logo_v01.png"}) {
+    childImageSharp {
+      gatsbyImageData(width: 99, height: 99, quality: 80, layout: CONSTRAINED)
+    }
+  }
+  iter: file(relativePath: {eq: "institutes/iter_v01.png"}) {
+    childImageSharp {
+      gatsbyImageData(width: 99, height: 99, quality: 80, layout: CONSTRAINED)
+    }
+  }
+  sns: file(
+    relativePath: {eq: "institutes/Spallation_Neutron_Source_logo_v01.png"}
+  ) {
+    childImageSharp {
+      gatsbyImageData(width: 99, height: 99, quality: 80, layout: CONSTRAINED)
+    }
+  }
+}`)
 
   return (
     <Flex style={style}>
@@ -68,8 +54,8 @@ const Collaboration = ({ style }) => {
         rel="noopener noreferrer"
         aria-label="Link to ESS Website"
       >
-        <Img
-          fluid={images.ess.childImageSharp.fluid}
+        <GatsbyImage
+          image={images.ess.childImageSharp.gatsbyImageData}
           style={{ minWidth: 99 }}
           alt="ESS Logo"
         />
@@ -80,8 +66,8 @@ const Collaboration = ({ style }) => {
         rel="noopener noreferrer"
         aria-label="Link to BNL Website"
       >
-        <Img
-          fluid={images.brok.childImageSharp.fluid}
+        <GatsbyImage
+          image={images.brok.childImageSharp.gatsbyImageData}
           style={{ minWidth: 99 }}
           alt="BNL Logo"
         />
@@ -92,8 +78,8 @@ const Collaboration = ({ style }) => {
         rel="noopener noreferrer"
         aria-label="Link to DESY Website"
       >
-        <Img
-          fluid={images.desy.childImageSharp.fluid}
+        <GatsbyImage
+          image={images.desy.childImageSharp.gatsbyImageData}
           style={{ minWidth: 99 }}
           alt="DESY Logo"
         />
@@ -104,8 +90,8 @@ const Collaboration = ({ style }) => {
         rel="noopener noreferrer"
         aria-label="Link to FRIB Website"
       >
-        <Img
-          fluid={images.frib.childImageSharp.fluid}
+        <GatsbyImage
+          image={images.frib.childImageSharp.gatsbyImageData}
           style={{ minWidth: 99 }}
           alt="FRIB Logo"
         />
@@ -116,8 +102,8 @@ const Collaboration = ({ style }) => {
         rel="noopener noreferrer"
         aria-label="Link to ITER Website"
       >
-        <Img
-          fluid={images.iter.childImageSharp.fluid}
+        <GatsbyImage
+          image={images.iter.childImageSharp.gatsbyImageData}
           style={{ minWidth: 99 }}
           alt="ITER Logo"
         />
@@ -128,14 +114,14 @@ const Collaboration = ({ style }) => {
         rel="noopener noreferrer"
         aria-label="Link to SNS Website"
       >
-        <Img
-          fluid={images.sns.childImageSharp.fluid}
+        <GatsbyImage
+          image={images.sns.childImageSharp.gatsbyImageData}
           style={{ minWidth: 99 }}
           alt="SNS Logo"
         />
       </a>
     </Flex>
-  )
+  );
 }
 
 export default Collaboration

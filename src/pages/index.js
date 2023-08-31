@@ -1,6 +1,6 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
-import Img from "gatsby-image"
+import { GatsbyImage } from "gatsby-plugin-image"
 import styled from "styled-components"
 
 import Layout from "../components/layout"
@@ -69,45 +69,35 @@ const ContentImage = styled.div`
 `
 
 const IndexPage = () => {
-  const images = useStaticQuery(graphql`
-    query {
-      banner: file(
-        relativePath: { eq: "banners/CS-Studio-Keyvisual_banner_1_darker_v03.png" }
-      ) {
-        childImageSharp {
-          fluid(maxWidth: 3300, maxHeight: 400, quality: 100) {
-            ...GatsbyImageSharpFluid_withWebp
-          }
-        }
-      }
-      pvmg: file(relativePath: { eq: "Layer-Architecture-IOC-hosting-v20-5.png" }) {
-        childImageSharp {
-          fluid(maxWidth: 700) {
-            ...GatsbyImageSharpFluid_withWebp
-          }
-        }
-      }
-      ui: file(relativePath: { eq: "01-main_System-Overview_v02.png" }) {
-        childImageSharp {
-          fluid(maxWidth: 700) {
-            ...GatsbyImageSharpFluid_withWebp
-          }
-        }
-      }
-      databrowser: file(relativePath: { eq: "dataBrowser.jpg" }) {
-        childImageSharp {
-          fluid(maxWidth: 655) {
-            ...GatsbyImageSharpFluid_withWebp
-          }
-        }
-      }
+  const images = useStaticQuery(graphql`{
+  banner: file(
+    relativePath: {eq: "banners/CS-Studio-Keyvisual_banner_1_darker_v03.png"}
+  ) {
+    childImageSharp {
+      gatsbyImageData(width: 3300, height: 400, quality: 100, layout: FULL_WIDTH)
     }
-  `)
+  }
+  pvmg: file(relativePath: {eq: "Layer-Architecture-IOC-hosting-v20-5.png"}) {
+    childImageSharp {
+      gatsbyImageData(width: 700, layout: CONSTRAINED)
+    }
+  }
+  ui: file(relativePath: {eq: "01-main_System-Overview_v02.png"}) {
+    childImageSharp {
+      gatsbyImageData(width: 700, layout: CONSTRAINED)
+    }
+  }
+  databrowser: file(relativePath: {eq: "dataBrowser.jpg"}) {
+    childImageSharp {
+      gatsbyImageData(width: 655, layout: CONSTRAINED)
+    }
+  }
+}`)
   return (
     <Layout>
       <SEO title="" />
       <Banner
-        imageFluid={images.banner.childImageSharp.fluid}
+        imageFluid={images.banner.childImageSharp.gatsbyImageData}
         text="BRING YOUR CONTROL SYSTEM TO THE NEXT LEVEL"
       />
       <div>
@@ -148,8 +138,8 @@ const IndexPage = () => {
                 services.
               </p>
               <ContentImage>
-                <Img
-                  fluid={images.pvmg.childImageSharp.fluid}
+                <GatsbyImage
+                  image={images.pvmg.childImageSharp.gatsbyImageData}
                   style={{ maxWidth: 437, width: `100%` }}
                 />
               </ContentImage>
@@ -171,8 +161,8 @@ const IndexPage = () => {
             </h2>
             <ContentFlexRight>
               <ContentImage>
-                <Img
-                  fluid={images.ui.childImageSharp.fluid}
+                <GatsbyImage
+                  image={images.ui.childImageSharp.gatsbyImageData}
                   style={{ maxWidth: 437, width: `100%` }}
                 />
               </ContentImage>
@@ -209,8 +199,8 @@ const IndexPage = () => {
               import/export of data in several formats. 
               </p>
               <ContentImage>
-                <Img
-                  fluid={images.databrowser.childImageSharp.fluid}
+                <GatsbyImage
+                  image={images.databrowser.childImageSharp.gatsbyImageData}
                   style={{ maxWidth: 655, width: `100%` }}
                 />
               </ContentImage>
@@ -225,7 +215,7 @@ const IndexPage = () => {
         </Container>
       </div>
     </Layout>
-  )
+  );
 }
 
 export default IndexPage

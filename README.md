@@ -37,9 +37,9 @@ Images are places inside `src/images` and queried using GraphQL.
 This query is included inside of the useStaticQuery hook inside of the main component of the page.
 The image can then be displayed using
 
-    <Img
-          fluid={images.opi.childImageSharp.fluid}
-          style={{ maxWidth: `80%`, margin: `3rem 0 4rem` }}
+    <GatsbyImage
+          image={images.opi.childImageSharp.fluid}
+          style={{ width: `80%`, margin: `3rem 0 4rem` }}
     />
 
 For more detail please refer to the [Gatsby documentation](https://www.gatsbyjs.org/docs/working-with-images/).

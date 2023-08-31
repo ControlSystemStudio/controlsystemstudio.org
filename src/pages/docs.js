@@ -31,23 +31,19 @@ p:last-child {
 `
 
 const About = () => {
-  const images = useStaticQuery(graphql`
-    query {
-      banner: file(
-        relativePath: { eq: "banners/CS-Studio-Keyvisual_banner_6_darker.png" }
-      ) {
-        childImageSharp {
-          fluid(maxWidth: 3300, maxHeight: 400, quality: 100) {
-            ...GatsbyImageSharpFluid_withWebp
-          }
-        }
-      }
+  const images = useStaticQuery(graphql`{
+  banner: file(
+    relativePath: {eq: "banners/CS-Studio-Keyvisual_banner_6_darker.png"}
+  ) {
+    childImageSharp {
+      gatsbyImageData(quality: 100, layout: FULL_WIDTH)
     }
-  `)
+  }
+}`)
   return (
     <Layout>
       <SEO title="Docs" />
-      <Banner imageFluid={images.banner.childImageSharp.fluid} text="Docs" />
+      <Banner imageFluid={images.banner.childImageSharp.gatsbyImageData} text="Docs" />
       <Container>
         <Grid className="docsgrid" style={{ marginBottom: `2rem` }} >
           <Showcase
@@ -153,7 +149,7 @@ const About = () => {
         </ul>
       </Container>
     </Layout>
-  )
+  );
 }
 
 export default About
