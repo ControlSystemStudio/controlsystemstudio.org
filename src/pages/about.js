@@ -224,6 +224,16 @@ const About = () => {
                 </li>
               </ul>
             </Member>
+            <Member>
+              <h4>Tynan Ford</h4>
+              <Role>Site Representative</Role>
+              <Site>Advanced Light Source (LBNL)</Site>
+              <ul className="social-icons social-icons-color">
+                <li>
+                  <a href="https://github.com/tynanford" className="social_github"></a>
+                </li>
+              </ul>
+            </Member>
           </Grid>
 
         </div>
