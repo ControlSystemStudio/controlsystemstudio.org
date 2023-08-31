@@ -7,8 +7,10 @@ Redesign of the website for Control System Studio (CS-Studio). Made using Gatsby
 https://peaceful-jackson-f187cb.netlify.app/
 
 ## Developing/Testing locally
-Gatsby has a fantastic development server feature, which allows you to preview the page immediately without building it. Make sure to install all npm dependencies using `npm install` the first time you run the site.
+Gatsby has a fantastic development server feature, which allows you to preview the page immediately without building it. This project uses Gatsby version 5 which REQUIRES Node 18. The project will not build with a lower version of Node and npm. 
+You may get a warning about peer dependency resolution with npm packages. This is because Gatsby 5 has a peer dependency on an unreleased version of React. Make sure to install all npm dependencies using `npm install` the first time you run the site. The project should build and run without issue, however. If you encounter an issue installing packages, run `npm install --legacy-peer-deps`.
     
+    $ npm install
     $ npm start
   
 ## Building
@@ -16,6 +18,7 @@ To run the site on a server, it needs to be built first.
 
     $ npm install
     $ npm run build
+    $ npm run serve
   
 The website files can be found in `public`.
 
