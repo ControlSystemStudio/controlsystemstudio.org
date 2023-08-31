@@ -2,7 +2,7 @@ import React from "react"
 import styled from 'styled-components'
 import { useStaticQuery, graphql } from "gatsby"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faBell, faEnvelope } from '@fortawesome/free-regular-svg-icons'
+import { faEnvelope } from '@fortawesome/free-regular-svg-icons'
 import { faGraduationCap, faBullhorn, faLightbulb, faThumbsUp, faSyncAlt } from '@fortawesome/free-solid-svg-icons'
 
 import Layout from "../components/layout"

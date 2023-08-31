@@ -3,7 +3,7 @@ import PropTypes from "prop-types"
 import React, { useState } from "react"
 import styled from "styled-components"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faGithub, faGooglePlus } from "@fortawesome/free-brands-svg-icons"
+import { faGithub } from "@fortawesome/free-brands-svg-icons"
 import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons'
 import "@fortawesome/fontawesome-svg-core/styles.css"
 
