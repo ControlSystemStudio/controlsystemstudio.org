@@ -98,7 +98,7 @@ const About = () => {
             <p>User stories and customer feedback</p>
           </Showcase>
           <Showcase
-            href="https://github.com/ControlSystemStudio/cs-studio/pulse"
+            href="https://github.com/ControlSystemStudio/phoebus/pulse"
             target="_blank"
             rel="noopener noreferrer"
           >
