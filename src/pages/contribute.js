@@ -22,28 +22,10 @@ const About = () => {
       <Banner imageFluid={images.banner.childImageSharp.gatsbyImageData} text="Contribute" />
       <Container>
         <h1>How to Contribute</h1>
-
-        <li>
-          CS-Studio & Phoebus development is hosted on Github. You will need a Github
+          Phoebus & CS-Studio development is hosted on Github. You will need a Github
           account.
-        </li>
-          
-        <h2>CS-Studio</h2>
-        <ul>
-          <li>
-            The most complete documentation for developers, including how to
-            import into Eclipse and build CS-Studio, is the{" "}
-            <a
-              href="http://cs-studio.sourceforge.net/docbook/pt01.html"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              docbook
-            </a>
-            .
-          </li>
-        </ul>
 
+          
         <h2>Phoebus</h2>
         <ul>
           <li>
@@ -58,8 +40,48 @@ const About = () => {
             </a>
             .
           </li>
+          <li>
+            The source code is located in the{" "}
+            <a
+              href="https://github.com/ControlSystemStudio/phoebus"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Phoebus Github repository
+            </a>
+            .
+          </li>
         </ul>
+        
+        <h2>CS-Studio</h2>
+        <ul>
+          <li>
+            The most complete documentation for developers, including how to
+            import into Eclipse and build CS-Studio, is the{" "}
+            <a
+              href="http://cs-studio.sourceforge.net/docbook/pt01.html"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              docbook
+            </a>
+            .
+          </li>
+          <li>
+            The source code is located in the{" "}
+            <a
+              href="https://github.com/ControlSystemStudio/cs-studio"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              CS-Studio Github repository
+            </a>
+            .
+          </li>
+        </ul>
+
         <h2>Fork us on Github</h2>
+
         <p>
           All contributions are accepted as Pull Requests on{" "}
           <a
@@ -111,7 +133,7 @@ const About = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              CodingGuidelines
+              Coding Guidelines
             </a>
             .
           </li>
@@ -122,7 +144,7 @@ const About = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              DevelopmentGuidelines
+              Development Guidelines
             </a>
             .
           </li>

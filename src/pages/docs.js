@@ -47,17 +47,6 @@ const About = () => {
       <Container>
         <Grid className="docsgrid" style={{ marginBottom: `2rem` }} >
           <Showcase
-            href="http://cs-studio.sourceforge.net/docbook/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <FontAwesomeIcon icon={faGraduationCap} size="2x" />
-            <h3>Guidebook</h3>
-            <p>
-            Manual for building and using CS-Studio
-            </p>
-          </Showcase>
-          <Showcase
             href="https://control-system-studio.readthedocs.io/en/latest/"
             target="_blank"
             rel="noopener noreferrer"
@@ -66,6 +55,17 @@ const About = () => {
             <h3>Guidebook</h3>
             <p>
             Manual for building and using Phoebus
+            </p>
+          </Showcase>
+          <Showcase
+            href="http://cs-studio.sourceforge.net/docbook/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FontAwesomeIcon icon={faGraduationCap} size="2x" />
+            <h3>Guidebook</h3>
+            <p>
+            Manual for building and using CS-Studio
             </p>
           </Showcase>
           <Showcase
