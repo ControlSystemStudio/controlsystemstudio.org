@@ -44,6 +44,16 @@ const Collaboration = ({ style }) => {
       gatsbyImageData(width: 99, height: 99, quality: 80, layout: CONSTRAINED)
     }
   }
+  als: file(relativePath: {eq: "institutes/als.png"}) {
+    childImageSharp {
+      gatsbyImageData(width: 120, height: 99, quality: 80, layout: CONSTRAINED)
+    }
+  }
+  dls: file(relativePath: {eq: "institutes/diamond.jpg"}) {
+    childImageSharp {
+      gatsbyImageData(width: 99, height: 99, quality: 80, layout: CONSTRAINED)
+    }
+  }
 }`)
 
   return (
@@ -118,6 +128,30 @@ const Collaboration = ({ style }) => {
           image={images.sns.childImageSharp.gatsbyImageData}
           style={{ minWidth: 99 }}
           alt="SNS Logo"
+        />
+      </a>
+      <a
+        href="https://als.lbl.gov/"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Link to SNS Website"
+      >
+        <GatsbyImage
+          image={images.als.childImageSharp.gatsbyImageData}
+          style={{ minWidth: 99 }}
+          alt="ALS Logo"
+        />
+      </a>
+      <a
+        href="https://www.diamondlightsource.ac.uk"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Link to SNS Website"
+      >
+        <GatsbyImage
+          image={images.dls.childImageSharp.gatsbyImageData}
+          style={{ minWidth: 99 }}
+          alt="DLS Logo"
         />
       </a>
     </Flex>
