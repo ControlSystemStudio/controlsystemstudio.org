@@ -54,6 +54,11 @@ const Collaboration = ({ style }) => {
       gatsbyImageData(width: 99, height: 99, quality: 80, layout: CONSTRAINED)
     }
   }
+  cea: file(relativePath: {eq: "institutes/cea.png"}) {
+    childImageSharp {
+      gatsbyImageData(width: 99, height: 99, quality: 80, layout: CONSTRAINED)
+    }
+  }
 }`)
 
   return (
@@ -152,6 +157,18 @@ const Collaboration = ({ style }) => {
           image={images.dls.childImageSharp.gatsbyImageData}
           style={{ minWidth: 99 }}
           alt="DLS Logo"
+        />
+      </a>
+      <a
+        href="https://www.cea.fr/english/"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Link to SNS Website"
+      >
+        <GatsbyImage
+          image={images.cea.childImageSharp.gatsbyImageData}
+          style={{ minWidth: 99 }}
+          alt="CEA Logo"
         />
       </a>
     </Flex>
