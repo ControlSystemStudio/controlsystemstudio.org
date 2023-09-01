@@ -44,6 +44,21 @@ const About = () => {
           Lastly, the Alarm Configuration Logger keeps track of any changes made to the configurations
           in the Alarm Server and versions these changes in a git repository.
         </p>
+        <p>
+          <a href="https://control-system-studio.readthedocs.io/en/latest/services/alarm-server/doc/index.html" target="_blank">
+            Read more - Alarm Server
+          </a>
+        </p>
+        <p>
+          <a href="https://control-system-studio.readthedocs.io/en/latest/services/alarm-logger/doc/index.html" target="_blank">
+            Read more - Alarm Logger
+          </a>
+        </p>
+        <p>
+          <a href="https://control-system-studio.readthedocs.io/en/latest/services/alarm-config-logger/doc/index.html" target="_blank">
+            Read more - Alarm Configuration Logger
+          </a>
+        </p>
         {/** Channel Finder */}
         <div style={{ marginBottom: `3rem` }}></div>
         <h2>Channel Finder Service</h2>
@@ -52,6 +67,11 @@ const About = () => {
           for channel names and associated meta-data with complex queries. Backed by ElasticSearch, the directory
           data consists of a set of Channels, with an arbitrary set of Properties (name-value pairs), and an arbitrary
           set of Tags (names). These channels can be then queried based on the channel name, property value and tags.
+        </p>
+        <p>
+          <a href="https://channelfinder.readthedocs.io/en/latest/" target="_blank">
+            Read more
+          </a>
         </p>
         {/** Logbook Service**/}
         <div style={{ marginBottom: `3rem` }}></div>
@@ -67,6 +87,11 @@ const About = () => {
           Attachments of any kind may be added to log entries. These are persisted in MongoDB by the service.
           Attachments can be searched by type. Clients will render thumbnail previews of image attachments.
         </p>
+        <p>
+          <a href="https://olog.readthedocs.io/en/latest/" target="_blank">
+            Read more
+          </a>
+        </p>
         {/** Save & Restore */}
         <div style={{ marginBottom: `3rem` }}></div>
         <h2>Save & Restore Service</h2>
@@ -75,6 +100,11 @@ const About = () => {
           These can be used by clients to manage configurations (aka save sets) and snapshots,
           to compare snapshots and to restore PV values from snapshots. This service is a Spring Boot-based
           application using Elasticsearch for data persistence.
+        </p>
+        <p>
+          <a href="https://control-system-studio.readthedocs.io/en/latest/services/save-and-restore/doc/index.html" target="_blank">
+            Read more
+          </a>
         </p>
         {/** Scan */}
         <div style={{ marginBottom: `3rem` }}></div>
@@ -95,11 +125,10 @@ const About = () => {
           be easily accessed by system experts.
         </p>
         <p>
-          <a href="http://htmlpreview.github.io/?https://github.com/ControlSystemStudio/cs-studio/blob/master/applications/scan/scan-plugins/org.csstudio.scan.ui/doc/scansystem.html">
+          <a href="http://htmlpreview.github.io/?https://github.com/ControlSystemStudio/cs-studio/blob/master/applications/scan/scan-plugins/org.csstudio.scan.ui/doc/scansystem.html" target="_blank">
             Read more
           </a>
         </p>
-        
       </Container>
     </Layout>
   );
