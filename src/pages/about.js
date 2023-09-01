@@ -256,7 +256,7 @@ const About = () => {
               href="mailto:cs-studio-core@lists.sourceforge.net"
             >cs-studio-core@lists.sourceforge.net</a></p>
           <p>Report Bugs/Problems: <a
-              href="https://github.com/ControlSystemStudio/cs-studio/issues"
+              href="https://github.com/ControlSystemStudio/phoebus/issues"
               target="_blank"
               rel="noopener noreferrer"
             >GitHub Issue Tracker</a></p>

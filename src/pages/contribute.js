@@ -116,7 +116,7 @@ const About = () => {
         <p>
           When in doubt or have a question, you should{" "}
           <a
-            href="https://github.com/ControlSystemStudio/cs-studio/issues"
+            href="https://github.com/ControlSystemStudio/phoebus/issues"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -161,7 +161,7 @@ const About = () => {
           </li>
           <li>
             <a
-              href="https://github.com/ControlSystemStudio/cs-studio/pulls"
+              href="https://github.com/ControlSystemStudio/phoebus/pulls"
               target="_blank"
               rel="noopener noreferrer"
             >
