@@ -207,10 +207,18 @@ const About = () => {
         <div style={{ marginBottom: `3rem` }}></div>
         <h2>Logbook</h2>
         <p>
-          Logbook info to be completed. 
+          The Data Browser, Display Builder, and other tools can be integrated with 
+          the logbook clients to make rich log entries. Each application can configure the
+          data that is automatically included in the log entry.
+        </p>
+
+        <p>
+          The pluggable framework for Phoebus and CS-Studio allows applications to 
+          create log entires to different implementations of logbook services. Currently, 
+          there is support for Olog, Olog-ES, ELOG, and SNS operations logbook.
         </p>
         <GatsbyImage
-          image={images.alarmTable.childImageSharp.gatsbyImageData}
+          image={images.logBook.childImageSharp.gatsbyImageData}
           style={{ maxWidth: 437 }}
         />
       </Container>
