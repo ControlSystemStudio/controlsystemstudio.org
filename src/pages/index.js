@@ -82,14 +82,14 @@ const IndexPage = () => {
       gatsbyImageData(width: 700, layout: CONSTRAINED)
     }
   }
-  ui: file(relativePath: {eq: "01-main_System-Overview_v02.png"}) {
+  ui: file(relativePath: {eq: "displayBuilderRuntime.png"}) {
     childImageSharp {
-      gatsbyImageData(width: 700, layout: CONSTRAINED)
+      gatsbyImageData(layout: FULL_WIDTH)
     }
   }
   databrowser: file(relativePath: {eq: "dataBrowser.png"}) {
     childImageSharp {
-      gatsbyImageData(width: 655, layout: CONSTRAINED)
+      gatsbyImageData(layout: FULL_WIDTH)
     }
   }
 }`)
@@ -171,7 +171,7 @@ const IndexPage = () => {
               <p>
                 A WYSIWYG editor makes it possible to develop production quality controls and
                 monitoring user interfaces easily.
-                The Phoebus & CS-Studio frameworks provide support for developing multi-threading applications 
+                The CS-Studio Phoebus framework provides support for developing multi-threading applications 
                 along with providing features like rate limiting and aggregation ensuring performance and scalablity of 
                 user developed screens.
               </p>
