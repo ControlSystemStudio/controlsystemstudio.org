@@ -31,7 +31,32 @@ const About = () => {
       gatsbyImageData(width: 487, layout: CONSTRAINED)
     }
   }
+  channelTable: file(relativePath: {eq: "channelTable.png"}) {
+    childImageSharp {
+      gatsbyImageData(width: 487, layout: CONSTRAINED)
+    }
+  }
+  alarmLog: file(relativePath: {eq: "alarmLog.png"}) {
+    childImageSharp {
+      gatsbyImageData(width: 487, layout: CONSTRAINED)
+    }
+  }
+  alarmTable: file(relativePath: {eq: "alarmTable.png"}) {
+    childImageSharp {
+      gatsbyImageData(width: 487, layout: CONSTRAINED)
+    }
+  }
+  saveAndRestore: file(relativePath: {eq: "saveAndRestore.png"}) {
+    childImageSharp {
+      gatsbyImageData(width: 487, layout: CONSTRAINED)
+    }
+  }
   databrowser: file(relativePath: {eq: "dataBrowser.png"}) {
+    childImageSharp {
+      gatsbyImageData(width: 487, layout: CONSTRAINED)
+    }
+  }
+  logBook: file(relativePath: {eq: "logBook.png"}) {
     childImageSharp {
       gatsbyImageData(width: 487, layout: CONSTRAINED)
     }
@@ -126,7 +151,45 @@ const About = () => {
           image={images.opi.childImageSharp.gatsbyImageData}
           style={{ maxWidth: `80%`, margin: `3rem 0 4rem` }}
         />
-
+        {/** Channel Table */}
+        <div style={{ marginBottom: `3rem` }}></div>
+        <h2>Channel Table</h2>
+        <p>
+          Info on Channel Table to be completed.
+        </p>
+        <GatsbyImage
+          image={images.channelTable.childImageSharp.gatsbyImageData}
+          style={{ maxWidth: 437 }}
+        />
+        {/** Alarm Applications **/}
+        <div style={{ marginBottom: `3rem` }}></div>
+        <h2>Alarm Table</h2>
+        <p>
+          Alarm Table info to be completed. 
+        </p>
+        <GatsbyImage
+          image={images.alarmTable.childImageSharp.gatsbyImageData}
+          style={{ maxWidth: 437 }}
+        />
+        <div style={{ marginBottom: `3rem` }}></div>
+        <h2>Alarm Log</h2>
+        <p>
+          Alarm Log info to be completed.
+        </p>
+        <GatsbyImage
+          image={images.alarmLog.childImageSharp.gatsbyImageData}
+          style={{ maxWidth: 437 }}
+        />
+        {/** Save & Restore */}
+        <div style={{ marginBottom: `3rem` }}></div>
+        <h2>Save/Restore</h2>
+        <p>
+          Info on Save/Restore to be completed.
+        </p>
+        <GatsbyImage
+          image={images.saveAndRestore.childImageSharp.gatsbyImageData}
+          style={{ maxWidth: 437 }}
+        />
         <div style={{ marginBottom: `3rem` }}></div>
         <h2>DataBrowser</h2>
         <p>
@@ -140,6 +203,16 @@ const About = () => {
         <p>
           The current plot can be emailed or sent to a log book or as email.
         </p>
+        {/** Logbook **/}
+        <div style={{ marginBottom: `3rem` }}></div>
+        <h2>Logbook</h2>
+        <p>
+          Logbook info to be completed. 
+        </p>
+        <GatsbyImage
+          image={images.alarmTable.childImageSharp.gatsbyImageData}
+          style={{ maxWidth: 437 }}
+        />
       </Container>
     </Layout>
   );

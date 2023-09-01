@@ -21,26 +21,6 @@ const About = () => {
       gatsbyImageData(width: 487, layout: CONSTRAINED)
     }
   }
-  alarmLog: file(relativePath: {eq: "alarmLog.png"}) {
-    childImageSharp {
-      gatsbyImageData(width: 487, layout: CONSTRAINED)
-    }
-  }
-  alarmTable: file(relativePath: {eq: "alarmTable.png"}) {
-    childImageSharp {
-      gatsbyImageData(width: 487, layout: CONSTRAINED)
-    }
-  }
-  channelFinder: file(relativePath: {eq: "channelTable.png"}) {
-    childImageSharp {
-      gatsbyImageData(width: 487, layout: CONSTRAINED)
-    }
-  }
-  saveAndRestore: file(relativePath: {eq: "saveAndRestore.png"}) {
-    childImageSharp {
-      gatsbyImageData(width: 487, layout: CONSTRAINED)
-    }
-  }
 }`)
 
   return (
@@ -51,9 +31,27 @@ const About = () => {
         text="Services"
       />
       <Container style={{ marginTop: `2rem` }}>
-        {/** Logbook **/}
+        {/** Alarm Services **/}
         <div style={{ marginBottom: `3rem` }}></div>
-        <h2>Logbook</h2>
+        <h2>Alarm Services</h2>
+        <p>
+          Alarm Services info to be completed. 
+        </p>
+        {/** Channel Finder */}
+        <div style={{ marginBottom: `3rem` }}></div>
+        <h2>Channel Finder</h2>
+        <p>
+          Channel Finder info to be completed.
+        </p>
+        {/** Save & Restore */}
+        <div style={{ marginBottom: `3rem` }}></div>
+        <h2>Save & Restore</h2>
+        <p>
+          Info on Save&Restore to be completed.
+        </p>
+        {/** Logbook Service**/}
+        <div style={{ marginBottom: `3rem` }}></div>
+        <h2>Logbook Service</h2>
         <p>
           The Data Browser, Display Builder, and other tools can be integrated with 
           the logbook clients to make rich log entries. Each application can configure the
@@ -69,44 +67,18 @@ const About = () => {
           image={images.logBook.childImageSharp.gatsbyImageData}
           style={{ maxWidth: 437 }}
         />
-
-        {/** Alarm Services **/}
+        {/** PV Archiver */}
         <div style={{ marginBottom: `3rem` }}></div>
-        <h2>Alarm Table</h2>
+        <h2>PV Archiver</h2>
         <p>
-          Alarm Table info to be completed. 
+          Info on PV Archiver to be completed.
         </p>
-        <GatsbyImage
-          image={images.alarmTable.childImageSharp.gatsbyImageData}
-          style={{ maxWidth: 437 }}
-        />
+        {/** EPICS Websocket */}
         <div style={{ marginBottom: `3rem` }}></div>
-        <h2>Alarm Log</h2>
+        <h2>EPICS Websocket</h2>
         <p>
-          Alarm Log info to be completed.
+          Info on PV Websocket to be completed.
         </p>
-        <GatsbyImage
-          image={images.alarmLog.childImageSharp.gatsbyImageData}
-          style={{ maxWidth: 437 }}
-        />
-        <div style={{ marginBottom: `3rem` }}></div>
-        <h2>Save & Restore</h2>
-        <p>
-          Info on Save&Restore to be completed.
-        </p>
-        <GatsbyImage
-          image={images.saveAndRestore.childImageSharp.gatsbyImageData}
-          style={{ maxWidth: 437 }}
-        />
-        <div style={{ marginBottom: `3rem` }}></div>
-        <h2>Channel Finder</h2>
-        <p>
-          Info on Channel Finder to be completed.
-        </p>
-        <GatsbyImage
-          image={images.alarmLog.childImageSharp.gatsbyImageData}
-          style={{ maxWidth: 437 }}
-        />
         <div style={{ marginBottom: `3rem` }}></div>
         <h2>Scan Client</h2>
         <p>
