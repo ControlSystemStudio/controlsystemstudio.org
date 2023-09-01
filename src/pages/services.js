@@ -30,37 +30,51 @@ const About = () => {
         <div style={{ marginBottom: `3rem` }}></div>
         <h2>Alarm Services</h2>
         <p>
-          Alarm Services info to be completed. 
+          There are three services which combine to make up a complete solution for control system alarm handling.
+          The core service is the Alarm Server which is based on Zookeeper and Kafka.
+          The Alarm Server contains user-defined alarm configurations persisted in Zookeeper.
+          These will list PVs of interest organized in a tree hierarchy to arbitrary depth.
+          Configuration files also contain additional information consumed by the alarm views,
+          e.g. guidance texts or links to control displays. The Alarm Server will send real time
+          messages to clients via Kafka data streams.
+        </p>
+        <p>
+          The second service is the Alarm Logger which is based on ElasticSearch and keeps a history
+          of all alarm messages and events which can be searched and filtered by clients.
+          Lastly, the Alarm Configuration Logger keeps track of any changes made to the configurations
+          in the Alarm Server and versions these changes in a git repository.
         </p>
         {/** Channel Finder */}
         <div style={{ marginBottom: `3rem` }}></div>
         <h2>Channel Finder Service</h2>
         <p>
-          Channel Finder info to be completed.
+          The Channel Finder service is a simple directory service which gives clients the ability to search
+          for channel names and associated meta-data with complex queries. Backed by ElasticSearch, the directory
+          data consists of a set of Channels, with an arbitrary set of Properties (name-value pairs), and an arbitrary
+          set of Tags (names). These channels can be then queried based on the channel name, property value and tags.
         </p>
         {/** Logbook Service**/}
         <div style={{ marginBottom: `3rem` }}></div>
         <h2>Logbook Service</h2>
         <p>
-            Info on Logbook service to be completed.
+          The Logbook Service (OLOG) is an electronic logbook which allows for the creation and retrieval of log entries.
+          The service was developed to address the needs of operators, engineers, and users of large scientific facilities.
+          Since these log entries are stored in Elasticsearch, the service also supports a powerful search API.
+          Search criteria include log entry title and body or its meta-data (author, date, tags, properties), or both.
         </p>
-        {/** PV Archiver */}
-        <div style={{ marginBottom: `3rem` }}></div>
-        <h2>PV Archiver</h2>
         <p>
-          Info on PV Archiver to be completed.
-        </p>
-        {/** PV Websocket */}
-        <div style={{ marginBottom: `3rem` }}></div>
-        <h2>PV Web Socket</h2>
-        <p>
-          Info on PV Websocket to be completed.
+          For basic formatting the log entry body is authored using Markdown, which is converted by clients to HTML.
+          Attachments of any kind may be added to log entries. These are persisted in MongoDB by the service.
+          Attachments can be searched by type. Clients will render thumbnail previews of image attachments.
         </p>
         {/** Save & Restore */}
         <div style={{ marginBottom: `3rem` }}></div>
         <h2>Save & Restore Service</h2>
         <p>
-          Info on Save&Restore to be completed.
+          The save-and-restore service implements service as a collection of REST endpoints.
+          These can be used by clients to manage configurations (aka save sets) and snapshots,
+          to compare snapshots and to restore PV values from snapshots. This service is a Spring Boot-based
+          application using Elasticsearch for data persistence.
         </p>
         {/** Scan */}
         <div style={{ marginBottom: `3rem` }}></div>
@@ -77,7 +91,7 @@ const About = () => {
         </p>
         <p>
           By running the scans on a central server, there are less worries that a script gets
-          cancelled accidentally on a client machine and all the logs and history of scans can
+          canceled accidentally on a client machine and all the logs and history of scans can
           be easily accessed by system experts.
         </p>
         <p>
