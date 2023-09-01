@@ -54,18 +54,7 @@ const About = () => {
             <FontAwesomeIcon icon={faGraduationCap} size="2x" />
             <h3>Guidebook</h3>
             <p>
-            Manual for building and using Phoebus
-            </p>
-          </Showcase>
-          <Showcase
-            href="http://cs-studio.sourceforge.net/docbook/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <FontAwesomeIcon icon={faGraduationCap} size="2x" />
-            <h3>Guidebook</h3>
-            <p>
-            Manual for building and using CS-Studio
+            Manual for building and using CS-Studio Phoebus
             </p>
           </Showcase>
           <Showcase

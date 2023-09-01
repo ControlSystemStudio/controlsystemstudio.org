@@ -26,7 +26,7 @@ const About = () => {
           account.
 
           
-        <h2>Phoebus</h2>
+        <h2>CS-Studio Phoebus</h2>
         <ul>
           <li>
             The most complete documentation for developers, including how to
@@ -53,7 +53,7 @@ const About = () => {
           </li>
         </ul>
         
-        <h2>CS-Studio</h2>
+        <h2>CS-Studio Eclipse</h2>
         <ul>
           <li>
             The most complete documentation for developers, including how to
