@@ -21,6 +21,16 @@ const About = () => {
       gatsbyImageData(layout: FULL_WIDTH)
     }
   }
+  displayBuilderRuntime: file(relativePath: {eq: "displayBuilderRuntime.png"}) {
+    childImageSharp {
+      gatsbyImageData(width: 487, layout: CONSTRAINED)
+    }
+  }
+  displayBuilderEditor: file(relativePath: {eq: "displayBuilderEditor.png"}) {
+    childImageSharp {
+      gatsbyImageData(width: 487, layout: CONSTRAINED)
+    }
+  }
   databrowser: file(relativePath: {eq: "dataBrowser.png"}) {
     childImageSharp {
       gatsbyImageData(width: 487, layout: CONSTRAINED)
@@ -82,6 +92,14 @@ const About = () => {
             implemented based on SWT.
           </li>
         </ul>
+        <GatsbyImage
+          image={images.displayBuilderRuntime.childImageSharp.gatsbyImageData}
+          style={{ maxWidth: 437 }}
+        />
+        <GatsbyImage
+          image={images.displayBuilderEditor.childImageSharp.gatsbyImageData}
+          style={{ maxWidth: 437 }}
+        />
         <p>The Display Builder file format is "compact XML" similar to this:</p>
         <pre>
           <code>
