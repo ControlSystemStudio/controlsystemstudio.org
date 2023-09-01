@@ -10,7 +10,7 @@ import Banner from "../components/banner"
 const About = () => {
   const images = useStaticQuery(graphql`{
   banner: file(
-    relativePath: {eq: "banners/CS-Studio-Keyvisual_banner_4_darker.png"}
+    relativePath: {eq: "banners/CS-Studio-Keyvisual_banner_8_darker.png"}
   ) {
     childImageSharp {
       gatsbyImageData(quality: 100, layout: FULL_WIDTH)
