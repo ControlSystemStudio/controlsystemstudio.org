@@ -35,6 +35,10 @@ const Site = styled.div`
   margin-bottom: 10px;
 `
 
+const Highlight = styled.span`
+  color: #00293f;
+  font-weight: bold;
+`
 
 const About = () => {
   const images = useStaticQuery(graphql`{
@@ -53,7 +57,8 @@ const About = () => {
       <Container>
         <p style={{ marginBottom: `0` }}>
           Control System Studio is a collection of tools and applications to monitor and operate 
-          large scale control systems, such as the ones in the accelerator community.
+          large scale control systems, such as the ones in the accelerator community. <Highlight>Phoebus </Highlight> 
+          is the current implementation of CS-Studio.
         </p>
 
         <div style={{ marginTop: `3rem`, marginBottom: `3rem` }}>
@@ -251,7 +256,7 @@ const About = () => {
               href="mailto:cs-studio-core@lists.sourceforge.net"
             >cs-studio-core@lists.sourceforge.net</a></p>
           <p>Report Bugs/Problems: <a
-              href="https://github.com/ControlSystemStudio/cs-studio/issues"
+              href="https://github.com/ControlSystemStudio/phoebus/issues"
               target="_blank"
               rel="noopener noreferrer"
             >GitHub Issue Tracker</a></p>

@@ -129,13 +129,22 @@ const Header = ({ siteTitle }) => {
               About
             </Link>
             <Link
-              to="/features"
+              to="/applications"
               activeStyle={{
                 color: "#004160",
                 borderBottom: `2px solid #004160`,
               }}
             >
-              Features
+              Applications
+            </Link>
+            <Link
+              to="/services"
+              activeStyle={{
+                color: "#004160",
+                borderBottom: `2px solid #004160`,
+              }}
+            >
+              Services
             </Link>
             <Link
               to="/docs"

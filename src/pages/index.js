@@ -82,14 +82,14 @@ const IndexPage = () => {
       gatsbyImageData(width: 700, layout: CONSTRAINED)
     }
   }
-  ui: file(relativePath: {eq: "01-main_System-Overview_v02.png"}) {
+  ui: file(relativePath: {eq: "displayBuilderRuntime.png"}) {
     childImageSharp {
-      gatsbyImageData(width: 700, layout: CONSTRAINED)
+      gatsbyImageData(layout: FULL_WIDTH)
     }
   }
-  databrowser: file(relativePath: {eq: "dataBrowser.jpg"}) {
+  databrowser: file(relativePath: {eq: "dataBrowser.png"}) {
     childImageSharp {
-      gatsbyImageData(width: 655, layout: CONSTRAINED)
+      gatsbyImageData(layout: FULL_WIDTH)
     }
   }
 }`)
@@ -108,11 +108,13 @@ const IndexPage = () => {
           large scale control systems, such as the ones in the accelerator community.
           </p>
           <p></p>
-          <p> The original implementation of <Highlight>CS-Studio</Highlight> is based on the eclipse RCP framework which provided
-          a extensible and pluggable architecture. <Highlight>Phoebus</Highlight> is a pure java/javafx based implementation 
-          which uses java feature like SPI and modules to provide the same extensible and modular achitecture.
+          <p>  <Highlight>Phoebus</Highlight> is a pure java/javafx based implementation which uses java 
+          feature like SPI and modules to provide the same extensible and modular achitecture. This is the 
+          current implementation of <Highlight>CS-Studio</Highlight>. The original implementation of 
+          <Highlight> CS-Studio</Highlight> is based on the eclipse RCP framework which provided
+          an extensible and pluggable architecture.
           </p>
-          <p> The <Highlight>CS-Studio</Highlight> and <Highlight>Phoebus</Highlight> products are developed and 
+          <p> The <Highlight>Phoebus</Highlight> and <Highlight>CS-Studio</Highlight> products are developed and 
           maintained by a collaboration between many laboratories and universities.
         </p>
         </Container>
@@ -131,10 +133,10 @@ const IndexPage = () => {
             </h2>
             <ContentFlexLeft>
               <p>
-                With an extensible data connection layer it is possible to use CS-Studio & Phoebus
+                With an extensible data connection layer it is possible to use Phoebus & CS-Studio 
                 with multiple control systems and data sources. Currently, the community supports
                 the EPICS channel access and pvAccess protocols along with MQTT.
-                The use of well defined SPI's allows for CS-Studio applications can be used with a multiple site specific 
+                The use of well defined SPI's allows for CS-Studio applications to be used with multiple site specific 
                 services.
               </p>
               <ContentImage>
@@ -167,9 +169,9 @@ const IndexPage = () => {
                 />
               </ContentImage>
               <p>
-                A WYSIWYG editor make is possible to develop production quality controls and
+                A WYSIWYG editor makes it possible to develop production quality controls and
                 monitoring user interfaces easily.
-                The CS-Studio & Phoebus frameworks provide support for developing multi threading applications 
+                The CS-Studio Phoebus framework provides support for developing multi-threading applications 
                 along with providing features like rate limiting and aggregation ensuring performance and scalablity of 
                 user developed screens.
               </p>
