@@ -1,9 +1,9 @@
 export const dlInfo = {
-    downloadVersion: "4.5.9",
-    downloadStableLinux: "http://download.controlsystemstudio.org/release/4.5/cs-studio-4.5.9-linux.gtk.x86_64.tar.gz",
-    downloadStableWindows: "http://download.controlsystemstudio.org/release/4.5/cs-studio-4.5.9-win32.win32.x86_64.zip",
-    downloadStableMac: "http://download.controlsystemstudio.org/release/4.5/cs-studio-4.5.9-macosx.cocoa.x86_64.zip",
-    allDownloads: "http://download.controlsystemstudio.org/release/4.5/",
+    downloadVersion: "4.7.2",
+    downloadStableLinux: "https://github.com/ControlSystemStudio/phoebus/releases/download/v4.7.2/phoebus-4.7.2-linux.tar.gz",
+    downloadStableWindows: "https://github.com/ControlSystemStudio/phoebus/releases/download/v4.7.2/phoebus-4.7.2-win.zip",
+    downloadStableMac: "https://github.com/ControlSystemStudio/phoebus/releases/download/v4.7.2/phoebus-4.7.2-macos.tar.gz",
+    allDownloads: "https://github.com/ControlSystemStudio/phoebus/releases",
     downloadDevVersion: "4.6.0",
     downloadDev: "https://openepics.ci.cloudbees.com/view/CS-Studio%204.6/",
 }
