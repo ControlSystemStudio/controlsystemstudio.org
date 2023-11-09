@@ -104,7 +104,7 @@ const DownloadSubtext = styled.p`
 const DownloadButton = ({ link, os }) => (
   <div>
     <StyledDownloadButton href={link}>
-      <FontAwesomeIcon icon={faDownload} /> Download Control System Studio
+      <FontAwesomeIcon icon={faDownload} /> Download Phoebus
     </StyledDownloadButton>
     <DownloadSubtext>
       Version {dlInfo.downloadVersion} for {os} |{" "}
@@ -116,7 +116,7 @@ const DownloadButton = ({ link, os }) => (
 const DevDownloadButton = () => (
   <div>
     <StyledDownloadButtonDev href={dlInfo.downloadDev}>
-      <FontAwesomeIcon icon={faDownload} /> Download Development Build
+      <FontAwesomeIcon icon={faDownload} /> Download Phoebus Development Build
     </StyledDownloadButtonDev>
     <DownloadSubtext>Version {dlInfo.downloadDevVersion}</DownloadSubtext>
   </div>
@@ -175,7 +175,6 @@ const Download = () => {
               os={"Windows"}
             />
           )}
-          <DevDownloadButton />
         </Flex>
         <h2>Site Specific Versions</h2>
         <SiteSpecificVersions />
