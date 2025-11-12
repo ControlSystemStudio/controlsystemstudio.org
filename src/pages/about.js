@@ -210,12 +210,12 @@ const About = () => {
               </ul>
             </Member>
             <Member>
-              <h4>Tanvi Ashwarya</h4>
+              <h4>Anthony Carriveau</h4>
               <Role>Site Representative</Role>
               <Site>FRIB</Site>
               <ul className="social-icons social-icons-color">
                 <li>
-                  <a href="https://github.com/tanviash" className="social_github"></a>
+                  <a href="https://github.com/acar7901" className="social_github"></a>
                 </li>
               </ul>
             </Member>
